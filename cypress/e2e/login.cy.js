@@ -1,18 +1,27 @@
 describe('Orange HRM Tests', () => {
+
+  const selectorList = {
+    usernameField: "[name='username']",
+    passwordField: "[name='password']",
+    loginButton: '.oxd-button',
+    toppbarField: ".oxd-topbar",
+    failtoppbarField:'.oxd-alert'
+  }
+
   it('login - sucess', () => {
     cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
-    cy.get("[name='username']").type ('Admin')
-    cy.get("[name='password']").type('admin123')
-    cy.get('.oxd-button').click ()
+    cy.get(selectorList.usernameField).type ('Admin')
+    cy.get(selectorList.passwordField).type('admin123')
+    cy.get(selectorList.loginButton).click ()
     cy.location('pathname').should('equal', '/web/index.php/dashboard/index')
-    cy.get(".oxd-topbar").contains('Dashboard')
+    cy.get(selectorList.toppbarField).contains('Dashboard')
   })
   it('login - Fail', () => {
     cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
-    cy.get("[name='username']").type ('gath')
-    cy.get("[name='password']").type('gath123')
-    cy.get('.oxd-button').click ()
-    cy.get('.oxd-alert')
+    cy.get(selectorList.usernameField).type ('gath')
+    cy.get(selectorList.passwordField).type('gath123')
+    cy.get(selectorList.loginButton).click ()
+    cy.get(selectorList.failtoppbarField)
     
   })
 })
