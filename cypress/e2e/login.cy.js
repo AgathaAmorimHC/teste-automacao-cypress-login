@@ -1,3 +1,5 @@
+import userData from '../fixtures/users/userData.json'
+
 describe('Orange HRM Tests', () => {
 
   const selectorList = {
