@@ -5,7 +5,6 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-
-    baseUrl: 'https://opensource-demo.orangehrmlive.com/web/index.php'
   },
+  video: true, // <- isso precisa estar aqui ou ser true por padrão
 });
