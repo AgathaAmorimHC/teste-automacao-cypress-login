@@ -6,7 +6,8 @@ Este projeto automatiza os testes de login no sistema **OrangeHRM**, utilizando 
 ### Demonstração
 
 Abaixo, um exemplo real de execução automatizada rodando via Cypress:
-![Demonstração do teste automatizado](./assets/demo-login.gif)
+![Demonstração do teste](./assets/gif/login.gif)
+
 
 
 ##  Funcionalidade Testada
