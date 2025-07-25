@@ -8,7 +8,7 @@ Este projeto automatiza os testes de login no sistema **OrangeHRM**, utilizando 
 Abaixo, um exemplo real de execução automatizada rodando via Cypress:
 ## Demonstração do Teste Automatizado
 
-![Demonstração do teste](https://github.com/AgathaAmorimHC/teste-automacao-cypress-login/raw/main/cypress/assets/login.gif)
+![Demonstração do teste](https://github.com/AgathaAmorimHC/teste-automacao-cypress-login/raw/main/media/login.gif)
 
 
 ##  Funcionalidade Testada
