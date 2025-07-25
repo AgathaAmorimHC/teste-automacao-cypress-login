@@ -60,7 +60,8 @@ assets/
 
 ##  Evidência: execução automatizada
 
-![Demonstração do teste](https://github.com/AgathaAmorimHC/teste-automacao-cypress-login/raw/main/cypress/assets/login.gif)
+![Demonstração do teste](https://github.com/AgathaAmorimHC/teste-automacao-cypress-login/raw/main/media/login.gif)
+
 
 ---
 
