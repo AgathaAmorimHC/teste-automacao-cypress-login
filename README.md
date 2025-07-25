@@ -6,8 +6,9 @@ Este projeto automatiza os testes de login no sistema **OrangeHRM**, utilizando 
 ### Demonstração
 
 Abaixo, um exemplo real de execução automatizada rodando via Cypress:
-![Demonstração do teste](./assets/gif/login.gif)
+## Demonstração do Teste Automatizado
 
+![Demonstração do teste](https://github.com/AgathaAmorimHC/teste-automacao-cypress-login/raw/main/cypress/assets/login.gif)
 
 
 ##  Funcionalidade Testada
@@ -57,18 +58,33 @@ assets/
 
 ---
 
-## 📂 Como Executar
+##  Evidência: execução automatizada
 
-```bash
-# Instalar dependências
-npm install
+![Demonstração do teste](https://github.com/AgathaAmorimHC/teste-automacao-cypress-login/raw/main/cypress/assets/login.gif)
 
-# Abrir o Cypress com interface
-npx cypress open
+---
 
-# Ou rodar diretamente via terminal
-npx cypress run
-```
+##  Como rodar o projeto localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/AgathaAmorimHC/teste-automacao-cypress-login.git
+   ```
+
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+3. Execute os testes com a interface do Cypress:
+   ```bash
+   npx cypress open
+   ```
+
+4. Ou execute diretamente no terminal (modo headless):
+   ```bash
+   npx cypress run
+   ```
 
 ---
 
@@ -79,4 +95,6 @@ npx cypress run
 
 ---
 
-Desenvolvido por [Agatha Amorim](https://github.com/AgathaAmorimHC)
+Desenvolvido por **Agatha Amorim**  
+Analista de QA em formação | Testes Manuais e Automatizados  
+[LinkedIn](https://www.linkedin.com/in/agathaamorimqa/) • [GitHub](https://github.com/AgathaAmorimHC)
