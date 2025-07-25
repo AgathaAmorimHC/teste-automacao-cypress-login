@@ -1,101 +1,104 @@
+# Teste de Automação de Login - Cypress
 
-# Automação de Login | Cypress + Page Object Model (POM)
-
-Este projeto automatiza os testes de login no sistema **OrangeHRM**, utilizando o framework **Cypress** e o padrão de projeto **Page Object Model (POM)**.
-
-### Demonstração
-
-Abaixo, um exemplo real de execução automatizada rodando via Cypress:
-## Demonstração do Teste Automatizado
-
-![Demonstração do teste](https://github.com/AgathaAmorimHC/teste-automacao-cypress-login/raw/main/media/login.gif)
-
-
-##  Funcionalidade Testada
-
-**Login no sistema OrangeHRM**
-
-URL: [https://opensource-demo.orangehrmlive.com/](https://opensource-demo.orangehrmlive.com/)
-
-##  Cenários de Teste Implementados
-
-1. **Login com credenciais válidas**  
-   Verifica se o usuário consegue acessar o sistema com nome de usuário e senha corretos.
-
-2. **Login com nome de usuário inválido**  
-   Valida a exibição de mensagens de erro ao inserir um nome de usuário incorreto.
-
-3. **Login com senha inválida**  
-   Garante que o sistema emite alerta quando a senha está incorreta.
-
-4. **Login com campos vazios**  
-   Verifica a validação do formulário e mensagens de erro quando o botão de login é pressionado sem preencher os campos.
+Este repositório contém um projeto de automação de testes utilizando **Cypress** para validar o fluxo de login no site [OrangeHRM](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login). O objetivo é demonstrar a automação de testes E2E com foco em qualidade, manutenção de código e boas práticas.
 
 ---
 
-## 📂 Estrutura de Pastas
+##  Demonstração do Teste
 
-```
-cypress/
-├── e2e/
-│   └── login.cy.js            # Testes automatizados
-├── support/
-│   └── commands.js
-│   └── e2e.js
-├── pages/
-│   └── loginPage.js           # Page Object do Login
-assets/
-└── demo-login.mp4             # Gravação da execução dos testes
+![Demonstração do teste](./media/login.gif)
+
+---
+
+## 📂 Estrutura do Projeto
+
+```bash
+📁 cypress
+│   ├── 📁 e2e
+│   │    └── login.cy.js        # Testes de login
+│   ├── 📁 support
+│   │    ├── commands.js        # Comandos customizados (futuros)
+│   │    └── e2e.js             # Pré-configuração dos testes
+│
+├── 📁 media                    # Evidências em GIF dos testes
+│
+├── cypress.config.js          # Configuração do Cypress
+└── package.json               # Dependências e scripts
 ```
 
 ---
 
-##  Tecnologias Utilizadas
+##  Testes Implementados
 
-- [Cypress](https://www.cypress.io/)
-- JavaScript
-- Page Object Model
+O arquivo `login.cy.js` cobre os seguintes cenários:
 
----
+1. **Login com credenciais válidas**
+2. **Login com credenciais inválidas**
+3. **Login com campos vazios**
+4. **Login com usuário válido e senha errada**
 
-##  Evidência: execução automatizada
+Todos os testes estão implementados com Cypress usando boas práticas como:
 
-![Demonstração do teste](https://github.com/AgathaAmorimHC/teste-automacao-cypress-login/raw/main/media/login.gif)
-
-
----
-
-##  Como rodar o projeto localmente
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/AgathaAmorimHC/teste-automacao-cypress-login.git
-   ```
-
-2. Instale as dependências:
-   ```bash
-   npm install
-   ```
-
-3. Execute os testes com a interface do Cypress:
-   ```bash
-   npx cypress open
-   ```
-
-4. Ou execute diretamente no terminal (modo headless):
-   ```bash
-   npx cypress run
-   ```
+* Comandos organizados
+* Separação de responsabilidades
+* Assertivas claras e diretas
 
 ---
 
-##  Observações:
+##  Como rodar os testes
 
-- Este projeto foi desenvolvido com foco em **boas práticas de automação** e clareza de código.
-- A estrutura modular com POM permite escalabilidade para futuros testes automatizados.
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/AgathaAmorimHC/teste-automacao-cypress-login.git
+cd teste-automacao-cypress-login
+```
+
+### 2. Instale as dependências
+
+```bash
+npm install
+```
+
+### 3. Execute o Cypress
+
+```bash
+npx cypress open
+```
+
+Ou rode em modo headless:
+
+```bash
+npx cypress run
+```
 
 ---
 
-Desenvolvido por **Agatha Amorim**  
-Analista de QA em formação | Testes Manuais e Automatizados  
-[LinkedIn](https://www.linkedin.com/in/agathaamorimqa/) • [GitHub](https://github.com/AgathaAmorimHC)
+## 🛠 Tecnologias Utilizadas
+
+* [Cypress](https://www.cypress.io/) v13+
+* JavaScript (ES6)
+* Node.js
+* VSCode
+
+---
+
+##  Próximos passos
+
+* Refatorar para usar o padrão Page Object Model (POM)
+* Implementar comandos customizados
+* Adicionar testes negativos adicionais (ex: campos com espaço)
+* Adicionar integração contínua (CI) com GitHub Actions
+
+---
+
+##  Autora
+
+Agatha Siqueira de Amorim
+[GitHub](https://github.com/AgathaAmorimHC) • [LinkedIn](https://www.linkedin.com/in/agatha-amorim/)
+
+---
+
+**Status:** ✅ Projeto em desenvolvimento com base em estudos guiados de QA e automação de testes.
+
+**Licença:** Livre para fins de aprendizado e portfólio.
